@@ -17,7 +17,7 @@ I Have Expertise in Development Like Routing, Authentication,Send Notfication , 
 * I study information systems at Omdurman Islamic University 2016<sup>th</sup> - 2022<sup>th</sup> -->
 
 ### Languages
-[![Technology ON This Project](https://skillicons.dev/icons?i=js,html,css,react,vite,redux,tailwind,nodejs,mongodb,express)](https://skillicons.dev)
+[![Technology ON This Project](https://skillicons.dev/icons?i=js,html,css,react,vite,redux,tailwind,nodejs,mongodb,express,laravel,mysql,php,vue,bootstrap,alpinejs)](https://skillicons.dev)
 
 ### Technologies
 
