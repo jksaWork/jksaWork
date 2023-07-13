@@ -28,6 +28,7 @@ export default function RootLayout({
         <TopLeftImg />
         <Nav />
         <Header />
+
         {children}
       </body>
     </html>

@@ -17,20 +17,43 @@ const Nav = () => {
         className="w-full flex flex-row xl:flex-col 
             xl:justify-center gap-y-10 px-4
             items-center xl:py-8
-            md:px-20 xl:px-0 h-[70px] xl:h-max
+            md:px-20 xl:px-0 h-[70px] xl:h-max  
             bg-white/10
             backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full
-            justify-around"
+            justify-around
+            
+            "
       >
         {links.map((link: NavLink, index: number) => {
           const Icon = link.icon;
           return (
             <Link
               href={link.path}
-              className={path == link.path ? "text-accent" : ""}
+              className={`${path == link.path ? "text-accent" : ""}
+              
+               relative flex group hover:text-accent transition-all  duration-300
+              `}
               key={index}
             >
               <Icon />
+              <div className="flex flex-col md:flex-row">
+                <div
+                  className="bg-white text-[15px]
+                 text-primary py-1 px-4 absolute hidden
+                  group-hover:inline-flex 
+                  md:right-[40px]
+                  md:top-[50%]
+                  top-[-60px]
+                  right-[15px]
+                  md:translate-y-[-50%]
+                  translate-x-[50%]
+                  font-semibold
+                  rounded-[10px]
+                  "
+                >
+                  {link.name}
+                </div>
+              </div>
             </Link>
           );
         })}
