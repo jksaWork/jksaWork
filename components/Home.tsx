@@ -48,6 +48,9 @@ function Home() {
         </div>
       </div>
       {/* Avatar */}
+      <div className="w-[1000px]   h-screen absolute top-0 right-0">
+        <ParticlesContainer />
+      </div>
       <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
         <div
           className="bg-name bg-explosion xl:bg-cover xl-bg-right 
