@@ -138,7 +138,7 @@ function AboutComponents() {
         >
           {aboutData[index].info.map((item, itemIndex) => {
             return (
-              <div>
+              <div key={itemIndex}>
                 <div className="font-light mb-2">{item.title}</div>
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
