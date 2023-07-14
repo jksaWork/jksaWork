@@ -1,89 +1,39 @@
 "use client";
 //  data
-// const aboutData = [
-//   {
-//     title: 'skills',
-//     info: [
-//       {
-//         title: 'Web Development',
-//         icons: [
-//           <FaHtml5 />,
-//           <FaCss3 />,
-//           <FaJs />,
-//           <FaReact />,
-//           <SiNextdotjs />,
-//           <SiFramer />,
-//           <FaWordpress />,
-//         ],
-//       },
-//       {
-//         title: 'UI/UX Design',
-//         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-//       },
-//     ],
-//   },
-//   {
-//     title: 'awards',
-//     info: [
-//       {
-//         title: 'Webby Awards - Honoree',
-//         stage: '2011 - 2012',
-//       },
-//       {
-//         title: 'Adobe Design Achievement Awards - Finalist',
-//         stage: '2009 - 2010',
-//       },
-//     ],
-//   },
-//   {
-//     title: 'experience',
-//     info: [
-//       {
-//         title: 'UX/UI Designer - XYZ Company',
-//         stage: '2012 - 2023',
-//       },
-//       {
-//         title: 'Web Developer - ABC Agency',
-//         stage: '2010 - 2012',
-//       },
-//       {
-//         title: 'Intern - DEF Corporation',
-//         stage: '2008 - 2010',
-//       },
-//     ],
-//   },
-//   {
-//     title: 'credentials',
-//     info: [
-//       {
-//         title: 'Web Development - ABC University, LA, CA',
-//         stage: '2011',
-//       },
-//       {
-//         title: 'Computer Science Diploma - AV Technical Institute',
-//         stage: '2009',
-//       },
-//       {
-//         title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-//         stage: '2006',
-//       },
-//     ],
-//   },
-// ];
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Transition from "@/components/Transition";
+import { Avatar, Circles } from "@/components";
+import { aboutData } from "@/constant";
+import { aboutDataType } from "@/comon.types";
+import { useState } from "react";
+import AboutComponents from "./AboutComponents";
+import { fadeIn } from "@/constant/variants";
 const About = () => {
+  const [index, setIndex] = useState<number>(1);
   return (
-    <AnimatePresence mode="wait">
-      {/*  */}
-      <motion.div key="About Page" className="h-full">
-        <Transition />
-      </motion.div>
-      Hello World
-    </AnimatePresence>
+    <div className="bg-primary/60  h-screen">
+      <AnimatePresence mode="wait">
+        {/*  */}
+        <motion.div key="About Page">
+          <Transition />
+        </motion.div>
+        <motion.div
+          variants={fadeIn("right", 1)}
+          animate="show"
+          exit="hidden"
+          initial="hidden"
+          className="bottom-0 left-[-10%] max-w-[450px] absolute hidden md:block "
+        >
+          <Avatar />
+        </motion.div>
+        <AboutComponents />
+
+        <Circles />
+      </AnimatePresence>
+    </div>
   );
 };
 

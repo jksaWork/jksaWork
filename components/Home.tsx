@@ -10,12 +10,12 @@ function Home() {
           className="container mx-auto flex flex-col
            justify-center
            text-center md:text-left
-           md:pt-[20px]
+           md:pt-[40px]
            h-screen
            "
         >
           <motion.h1
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("down", 0)}
             animate="show"
             exit="hidden"
             initial="hidden"
@@ -25,7 +25,7 @@ function Home() {
             into <span className="text-accent">Digital realtie</span>
           </motion.h1>
           <motion.p
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("down", 0.1)}
             animate="show"
             exit="hidden"
             initial="hidden"
@@ -37,7 +37,7 @@ function Home() {
             excepturi suscipit nisi aut accusantium voluptatum? Beatae?
           </motion.p>
           <motion.div
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("down", 0.2)}
             animate="show"
             exit="hidden"
             initial="hidden"
@@ -48,10 +48,10 @@ function Home() {
         </div>
       </div>
       {/* Avatar */}
-      <div className="w-[1000px]   h-screen absolute top-0 right-0">
+      <div className="w-[1000px]  hidden md:block   h-screen absolute top-0 right-0">
         <ParticlesContainer />
       </div>
-      <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
+      <div className="w-[1200px] hidden md:block h-full absolute right-0 bottom-0 ">
         <div
           className="bg-name bg-explosion xl:bg-cover xl-bg-right 
         w-full h-full z-0

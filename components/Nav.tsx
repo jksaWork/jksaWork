@@ -41,7 +41,7 @@ const Nav = () => {
                   className="bg-white text-[15px]
                  text-primary py-1 px-4 absolute hidden
                   group-hover:inline-flex 
-                  md:right-[40px]
+                  md:right-[70px]
                   md:top-[50%]
                   top-[-60px]
                   right-[15px]

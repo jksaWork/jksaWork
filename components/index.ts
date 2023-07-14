@@ -6,3 +6,4 @@ export { default as Transition } from "./Transition";
 export { default as Home } from "./Home";
 export { default as ParticlesContainer } from "./ParticlesContainer";
 export { default as ProjectsBtn } from "./ProjectsBtn";
+export { default as Circles } from "./Circles";
