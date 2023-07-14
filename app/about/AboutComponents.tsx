@@ -101,8 +101,10 @@ function AboutComponents() {
       </div>
       <div>
         <motion.div
+          variants={fadeIn("up", 0)}
           animate="show"
           exit="hidden"
+          initial="hidden"
           className="mx-auto md:mx-0 flex mb-4 gap-x-4 md:gap-x-8 "
         >
           {aboutData.map((el: aboutDataType, itemIndex) => (
@@ -127,7 +129,13 @@ function AboutComponents() {
             </div>
           ))}
         </motion.div>
-        <div className="py-2 xl:py-6 flex flex-col  items-center md:items-start gap-y-2 md:gap-y-4">
+        <motion.div
+          variants={fadeIn("up", 0)}
+          animate="show"
+          exit="hidden"
+          initial="hidden"
+          className="py-2 xl:py-6 flex flex-col  items-center md:items-start gap-y-2 md:gap-y-4"
+        >
           {aboutData[index].info.map((item, itemIndex) => {
             return (
               <div>
@@ -142,7 +150,7 @@ function AboutComponents() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
