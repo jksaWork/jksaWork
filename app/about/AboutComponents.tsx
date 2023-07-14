@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { aboutData } from "@/constant";
 import { aboutDataType } from "@/comon.types";
 import { IconType } from "react-icons";
@@ -143,8 +143,12 @@ function AboutComponents() {
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
-                  {item.icons?.map((el: IconType) => {
-                    return <div className="text-3xl">{el}</div>;
+                  {item.icons?.map((el: ReactNode, index: number) => {
+                    return (
+                      <div key={index} className="text-3xl">
+                        {el}
+                      </div>
+                    );
                   })}
                 </div>
               </div>
