@@ -26,7 +26,7 @@ function ServiceComponent() {
           </p>
         </motion.div>
         <motion.div
-          variants={fadeIn("down", 0)}
+          variants={fadeIn("up", 0)}
           animate="show"
           exit="hidden"
           initial="hidden"

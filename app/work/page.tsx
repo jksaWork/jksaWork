@@ -19,7 +19,7 @@ const About = () => {
       <Circles />
       <AnimatePresence mode="wait">
         {/*  */}
-        <motion.div key="About Page">
+        <motion.div key="Wrok  Page">
           <Transition />
         </motion.div>
         <motion.div

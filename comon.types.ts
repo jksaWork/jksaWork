@@ -11,3 +11,14 @@ export type aboutDataType = {
   info: any[];
   icons?: any[] | { title?: string; stage?: string }[];
 };
+export type WorkImage = {
+  title: string;
+  path: string;
+  url?: string;
+};
+export type SlideType = {
+  images: WorkImage[];
+};
+export type workSlidesTypes = {
+  slides: SlideType[];
+};

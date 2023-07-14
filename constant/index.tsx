@@ -1,4 +1,4 @@
-import { NavLink, aboutDataType } from "@/comon.types";
+import { NavLink, aboutDataType, workSlidesTypes } from "@/comon.types";
 import {
   HiHome,
   HiUser,
@@ -178,3 +178,48 @@ export const serviceData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
+
+export const workSlides: workSlidesTypes = {
+  slides: [
+    {
+      images: [
+        {
+          title: "title",
+          path: "/thumb1.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb2.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb3.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb4.jpg",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/thumb4.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb1.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb2.jpg",
+        },
+        {
+          title: "title",
+          path: "/thumb3.jpg",
+        },
+      ],
+    },
+  ],
+};
