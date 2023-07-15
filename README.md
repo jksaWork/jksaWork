@@ -1,8 +1,11 @@
 ## Hi there 👋
 
-My name is <strong> mohammed Altigani osamn </strong>
-I Am a Proficient Php-laravel Developer With 2+ Years of Experience.
-I Have Expertise in Development Like Routing, Authentication,Send Notfication , Sessions and Caching, and Web App Development Through Laravel Framework . Php Developer With Expertise in Html/css, Javascript, Vue Js , and Mysql, I Am Capable of Building Responsive Web and App Designs to Improve Customer Experience
+ - My name is <strong>  mohammed Altigani osamn  <strong>I Am a Proficient Web Developer With more Than 3+ Years of Experience. I Have Expertise in Bulid Modren Web Design , 
+I am an expert in creating web-based systems, programming , interfaces for applications and developing Responsive web pages
+ (Design)
+
+ - I Have Expertise in Development Like Routing, Authentication,Send Notfication , 
+Sessions and Caching, Buliding API interfaces REST Full API  , Graphql , Websockit    ,  Web App Development Through Laravel Framework . Web Developer With Expertise in Html/css, Javascript, Vue Js, Reactjs , Nextjs, and Mysql,Redis,MongoDB I Am Capable of Building Responsive Web and App Designs to Improve Customer Experience
 
 - Knowledge of Programming Languages Like Html, Css, Jquery, and Javascript.
 - Api Design Skills With Expertise in Restful Web Services and Design.
