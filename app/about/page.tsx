@@ -14,7 +14,7 @@ import { fadeIn } from "@/constant/variants";
 const About = () => {
   const [index, setIndex] = useState<number>(1);
   return (
-    <div className="bg-primary/60  h-screen">
+    <div className="bg-primary/60  h-screen overflow-hidden">
       <AnimatePresence mode="wait">
         {/*  */}
         <motion.div key="About Page">

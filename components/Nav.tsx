@@ -9,7 +9,7 @@ const Nav = () => {
   const path = usePathname();
   return (
     <nav
-      className="flex w-full flex-col xl:justify-center fixed 
+      className="flex w-full  max-w-[100vw] flex-col xl:justify-center fixed 
         h-max  bottom-0 gap-y-4 mt-auto xl:right-[2%] 
         xl:w-16  xl:max-w-md z-50 xl:h-screen"
     >

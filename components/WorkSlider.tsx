@@ -31,7 +31,7 @@ const WorkSilder = () => {
                       key={index}
                       className="cursor-pointer z-10 group rounded-lg relative"
                     >
-                      <Link target="_blank" href={el.url}>
+                      <Link target="_blank" href={el.path}>
                         <div
                           className="absolute opacity-0 group-hover:opacity-80 w-full h-full
                         gap-1 justify-center items-center
