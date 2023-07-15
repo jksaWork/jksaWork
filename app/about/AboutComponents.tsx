@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactNode, useState } from "react";
-import { aboutData } from "@/constant";
+import { SkillIntorDesc, aboutData } from "@/constant";
 import { aboutDataType } from "@/comon.types";
 import { IconType } from "react-icons";
 import CountUp from "react-countup";
@@ -9,29 +9,29 @@ import { fadeIn } from "@/constant/variants";
 function AboutComponents() {
   const [index, setIndex] = useState<number>(0);
   return (
-    <div className="container mx-auto h-full flex flex-col items-center gap-y-8  justify-center md:justify-start md:flex-row ">
+    <div className="container mx-auto h-full grid md:grid-cols-2 items-center gap-y-8  justify-center md:justify-start md:flex-row ">
       <div className="md:flex-1">
         <motion.h3
           variants={fadeIn("down", 0.2)}
           animate="show"
           exit="hidden"
           initial="hidden"
-          className="text-3xl text-center md:text-start"
+          className="text-3xl text-center md:text-start capitalize "
         >
-          <span className="text-accent">Great</span> ideas generate great
-          applications
+          An <span className="text-accent">experienced</span> programmer makes
+          <br />
+          the job <span className="text-accent">easy</span>
         </motion.h3>
         <motion.p
           variants={fadeIn("down", 0.2)}
           animate="show"
           exit="hidden"
           initial="hidden"
-          className="max-w-[400px] mx-auto md:mx-0 mb-2 mt-5"
+          className="max-w-[400px]
+          line-clamp-3 md:line-clamp-none
+          mx-auto md:mx-0 mb-2 mt-5"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          suscipit excepturi ex laborum dolorum eligendi deleniti perspiciatis
-          quasi atque, hic architecto consequuntur! Dolorum magnam voluptatem ut
-          id vitae, voluptas labore!
+          {SkillIntorDesc}
         </motion.p>
         <div className="">
           <motion.div
@@ -99,13 +99,13 @@ function AboutComponents() {
           </motion.div>
         </div>
       </div>
-      <div>
+      <div className="w-max">
         <motion.div
           variants={fadeIn("up", 0)}
           animate="show"
           exit="hidden"
           initial="hidden"
-          className="mx-auto md:mx-0 flex mb-4 gap-x-4 md:gap-x-8 "
+          className="mx-auto md:mx-0 flex  mb-4 gap-x-4 md:gap-x-8 "
         >
           {aboutData.map((el: aboutDataType, itemIndex) => (
             <div
@@ -145,7 +145,7 @@ function AboutComponents() {
                 <div className="flex gap-x-4">
                   {item.icons?.map((el: ReactNode, index: number) => {
                     return (
-                      <div key={index} className="text-3xl">
+                      <div key={Math.random().toString()} className="text-3xl">
                         {el}
                       </div>
                     );

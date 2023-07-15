@@ -18,23 +18,28 @@ import {
   SiFramer,
   SiNextdotjs,
 } from "react-icons/si";
-import {
-  TiSocialLinkedin,
-  TiSocialFacebookCircular,
-  TiMail,
-  TiMessages,
-} from "react-icons/ti";
 
+import {
+  DiMysql,
+  DiLaravel,
+  DiNodejsSmall,
+  DiNginx,
+  DiMongodb,
+  DiRedis,
+} from "react-icons/di";
+import { BsFillBootstrapFill } from "react-icons/bs";
 import {
   FaCss3,
   FaFacebookMessenger,
   FaFacebookSquare,
   FaFigma,
+  FaGithub,
   FaHtml5,
   FaJs,
   FaLinkedin,
   FaMailBulk,
   FaReact,
+  FaVuejs,
   FaWhatsapp,
   FaWordpress,
 } from "react-icons/fa";
@@ -45,6 +50,17 @@ import {
   RxReader,
   RxRocket,
 } from "react-icons/rx";
+
+export const intorDec = `
+My name is mohammed Altigani osamn I Am a Proficient Web Developer With more Than 3+ Years of Experience. I Have Expertise in Bulid Modren Web Design , 
+I am an expert in creating web-based systems, programming , interfaces for applications and developing Responsive web pages
+ (Design)
+`;
+
+export const SkillIntorDesc = `
+I Have Expertise in Development Like Routing, Authentication,Send Notfication , 
+Sessions and Caching, Buliding API interfaces REST Full API  , Graphql , Websockit    ,  Web App Development Through Laravel Framework . Web Developer With Expertise in Html/css, Javascript, Vue Js, Reactjs , Nextjs, and Mysql,Redis,MongoDB I Am Capable of Building Responsive Web and App Designs to Improve Customer Experience`;
+
 export const links: NavLink[] = [
   { name: "home", path: "/", icon: HiHome },
   { name: "about", path: "/about", icon: HiUser },
@@ -62,6 +78,11 @@ export const links: NavLink[] = [
   },
 ];
 export const SocilaLinks: NavLink[] = [
+  {
+    path: "https://github.com/jksaWork",
+    name: "Git Hub Account",
+    icon: FaGithub,
+  },
   {
     path: "mailto: jksa.work.1@gmail.com",
     name: "email",
@@ -90,33 +111,28 @@ export const aboutData: aboutDataType[] = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Front-End Development",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
+          <FaVuejs />,
           <SiNextdotjs />,
           <SiFramer />,
-          <FaWordpress />,
+          <BsFillBootstrapFill />,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Back-End Development",
+        icons: [
+          <DiMysql />,
+          <DiLaravel />,
+          <DiNodejsSmall />,
+          <DiNginx />,
+          <DiMongodb />,
+          <DiRedis />,
+        ],
       },
     ],
   },
@@ -124,16 +140,16 @@ export const aboutData: aboutDataType[] = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Laravel Trainer - Msc Company",
+        stage: "2021/10/1 - 2022/1/1",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Laravel Devloper - Msc Company",
+        stage: "2022/1/1 - 2023/1/1",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Freelacer",
+        stage: "2023 - now",
       },
     ],
   },
@@ -141,48 +157,36 @@ export const aboutData: aboutDataType[] = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title:
+          "Infomation System Bachelor's degree - OUI Omdurman Islamic University",
+        stage: "2023",
       },
     ],
   },
 ];
-
+export const ServiceIntor = `By utilizing my skills in the right way, I can provide you with many smart solutions that in turn help in the process of achieving satisfaction by the developed software.`;
+import { FiActivity, FiAirplay, FiAlertTriangle } from "react-icons/fi";
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <FiActivity />,
+    title: "Building",
+    description:
+      "The ability to know the client's requirements and start achieving the goals ",
   },
   {
-    icon: <RxPencil2 />,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <FiAlertTriangle />,
+    title: "Testing",
+    description:
+      "Testing and writing test codes (unit - feture) that help achieve project goals ",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <FiAirplay />,
+    title: "Deploying",
+    description:
+      "Assisting clients in the process of uploading project files to the server",
   },
 ];
+export const WorkIntro = `I have many projects with different technologies used in developing websites  static and Dynamic Websites Pure  Projects , vuejs , reactjs , nextjs,Laravel/livewire Laravel/vuejs  , MERN and Other Technology  `;
 
 export const workSlides: workSlidesTypes = {
   slides: [

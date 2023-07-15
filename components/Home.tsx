@@ -2,6 +2,7 @@
 import { fadeIn } from "@/constant/variants";
 import { motion } from "framer-motion";
 import { Avatar, ProjectsBtn, ParticlesContainer } from "@/components";
+import { intorDec } from "@/constant";
 function Home() {
   return (
     <div className="bg-primary/60 h-full">
@@ -19,7 +20,7 @@ function Home() {
             animate="show"
             exit="hidden"
             initial="hidden"
-            className="h1 capitalize"
+            className="md:text-5xl  text-3xl capitalize"
           >
             transforming ideas <br />
             into <span className="text-accent">Digital realtie</span>
@@ -29,12 +30,9 @@ function Home() {
             animate="show"
             exit="hidden"
             initial="hidden"
-            className="max-w-sm xl:max-w-sm mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm mt-3 capitalize xl:max-w-sm mx-auto xl:mx-0 mb-6 xl:mb-10"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-            officiis eligendi distinctio expedita recusandae reprehenderit
-            officia quae sint, quam temporibus nihil dolorem blanditiis
-            excepturi suscipit nisi aut accusantium voluptatum? Beatae?
+            {intorDec}
           </motion.p>
           <motion.div
             variants={fadeIn("down", 0.2)}

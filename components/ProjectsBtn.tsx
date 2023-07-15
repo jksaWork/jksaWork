@@ -9,8 +9,8 @@ const ProjectsBtn = () => {
         className="group
         relative
         p-3
-        max-w-[185px]
-        max-h-[185px]
+        max-w-[150px]
+        max-h-[150px]
         flex items-center justify-center
         bg-no-repaet bg-cover
         bg-circleStar

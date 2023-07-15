@@ -4,6 +4,7 @@ import { ServiceSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
 import WorkSilder from "@/components/WorkSlider";
+import { WorkIntro } from "@/constant";
 // WorkSilder
 function WorkComponent() {
   return (
@@ -19,12 +20,7 @@ function WorkComponent() {
           <h2 className="text-4xl capitalize md:mt-3">
             my <span className="text-accent">Work .</span>{" "}
           </h2>
-          <p className="max-w-md mx-auto mt-3 capitalize">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            asperiores beatae ut numquam dolore temporibus eius. Autem ex sequi
-            vitae dolorem nesciunt, sit, laudantium cumque harum necessitatibus
-            consequuntur voluptas illum.
-          </p>
+          <p className="max-w-md mx-auto mt-3 capitalize">{WorkIntro}</p>
         </motion.div>
         <motion.div
           variants={fadeIn("up", 0)}

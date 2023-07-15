@@ -1,7 +1,7 @@
 // data
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import { serviceData } from "@/constant";
 import { RxArrowTopRight } from "react-icons/rx";
 import "swiper/css";
@@ -27,7 +27,7 @@ const ServiceSlider = () => {
         }}
         freeMode={true}
         pagination={{ clickable: true }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode, Pagination, Navigation]}
         className="h-[240px] sm:h-[340px]"
       >
         {/* Hello Wolr d */}

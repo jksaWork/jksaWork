@@ -31,10 +31,7 @@ const WorkSilder = () => {
                       key={index}
                       className="cursor-pointer z-10 group rounded-lg relative"
                     >
-                      <Link
-                        target="_blank"
-                        href={el.url ? el.url : "http://localhost:213"}
-                      >
+                      <Link target="_blank" href={el.url}>
                         <div
                           className="absolute opacity-0 group-hover:opacity-80 w-full h-full
                         gap-1 justify-center items-center
@@ -53,7 +50,7 @@ const WorkSilder = () => {
                             className="
                             text-2xl font-bold
                           transition-all duration-500
-                          absolute group-hover:translate-x-[80px] translate-x-[20px]  items-center gap-2"
+                          absolute group-hover:translate-x-[72px] translate-x-[20px]  items-center gap-2"
                           >
                             <RxArrowRight />
                           </span>

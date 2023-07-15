@@ -3,7 +3,7 @@ import React from "react";
 import { ServiceSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
-
+import { ServiceIntor } from "@/constant";
 function ServiceComponent() {
   return (
     <div className="container mx-auto pt-10 h-full w-full flex items-center justify-center">
@@ -16,14 +16,9 @@ function ServiceComponent() {
           className="md:w-[30vw] flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
         >
           <h2 className="text-4xl capitalize md:mt-3">
-            my service <span className="text-accent">.</span>{" "}
+            my <span className="text-accent"> services .</span>{" "}
           </h2>
-          <p className="max-w-md mx-auto mt-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            asperiores beatae ut numquam dolore temporibus eius. Autem ex sequi
-            vitae dolorem nesciunt, sit, laudantium cumque harum necessitatibus
-            consequuntur voluptas illum.
-          </p>
+          <p className="max-w-md mx-auto mt-3">{ServiceIntor}</p>
         </motion.div>
         <motion.div
           variants={fadeIn("up", 0)}

@@ -3,6 +3,7 @@ import "./globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import "swiper/css/freemode";
 
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
