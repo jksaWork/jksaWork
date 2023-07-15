@@ -9,3 +9,4 @@ export { default as ProjectsBtn } from "./ProjectsBtn";
 export { default as Circles } from "./Circles";
 export { default as Bulb } from "./Bulb";
 export { default as ServiceSlider } from "./ServiceSlider";
+export { default as TestimonialSlider } from "./TestimonialSlider";

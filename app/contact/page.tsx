@@ -1,5 +1,30 @@
-const Contact = () => {
-  return <div>Contact</div>;
+"use client";
+//  data
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import Transition from "@/components/Transition";
+import { Avatar, Circles } from "@/components";
+import { aboutData } from "@/constant";
+import { aboutDataType } from "@/comon.types";
+import { useState } from "react";
+import ContactForm from "./contactForm";
+import { fadeIn } from "@/constant/variants";
+const About = () => {
+  const [index, setIndex] = useState<number>(1);
+  return (
+    <div className="bg-primary/60  h-screen">
+      <AnimatePresence mode="wait">
+        {/*  */}
+        <motion.div key="About Page">
+          <Transition />
+        </motion.div>
+        <ContactForm />
+        <Circles />
+      </AnimatePresence>
+    </div>
+  );
 };
 
-export default Contact;
+export default About;

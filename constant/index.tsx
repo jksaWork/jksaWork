@@ -1,4 +1,9 @@
-import { NavLink, aboutDataType, workSlidesTypes } from "@/comon.types";
+import {
+  ClientsSayType,
+  NavLink,
+  aboutDataType,
+  workSlidesTypes,
+} from "@/comon.types";
 import {
   HiHome,
   HiUser,
@@ -223,3 +228,50 @@ export const workSlides: workSlidesTypes = {
     },
   ],
 };
+
+const testimonialData = [
+  {
+    image: "/t-avt-1.png",
+    name: "Anne Smith",
+    position: "Customer",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  },
+  {
+    image: "/t-avt-2.png",
+    name: "Jane Doe",
+    position: "Customer",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  },
+  {
+    image: "/t-avt-3.png",
+    name: "Jhon Doe",
+    position: "Customer",
+    message:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  },
+];
+export const Clients: ClientsSayType[] = [
+  {
+    person: "Mohammmed Mudather",
+    image: "/thumb1.jpg",
+    postion: "Devopler",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
+  },
+  {
+    person: "Monther Saif",
+    image: "/thumb1.jpg",
+    postion: "Devopler",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
+  },
+  {
+    person: "AbuBaker Hilal",
+    image: "/thumb1.jpg",
+    postion: "Devopler",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
+  },
+];

@@ -22,3 +22,10 @@ export type SlideType = {
 export type workSlidesTypes = {
   slides: SlideType[];
 };
+
+export type ClientsSayType = {
+  person: string;
+  image: string;
+  postion: string;
+  content: string;
+};

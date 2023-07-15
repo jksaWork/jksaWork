@@ -33,16 +33,27 @@ const WorkSilder = () => {
                         href={el.url ? el.url : "http://localhost:213"}
                       >
                         <div
-                          className="absolute hidden group-hover:flex w-full h-full
+                          className="absolute opacity-0 group-hover:opacity-80 w-full h-full
                         gap-1 justify-center items-center
-                        bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] transition-all duration-1000"
+                        bg-gradient-to-l
+                        flex 
+                        from-transparent via-[#e838cc] to-[#4a22bd] transition-all duration-300"
                         >
-                          <div className="flex text-xl items-center gap-2">
+                          <div
+                            className="
+                          transition-all duration-400
+                          absolute group-hover:translate-x-0 translate-x-[20px] text-xl items-center gap-2"
+                          >
                             Live Preview
-                            <span className="text-2xl">
-                              <RxArrowRight />
-                            </span>
                           </div>
+                          <span
+                            className="
+                            text-2xl font-bold
+                          transition-all duration-500
+                          absolute group-hover:translate-x-[80px] translate-x-[20px]  items-center gap-2"
+                          >
+                            <RxArrowRight />
+                          </span>
                         </div>
                       </Link>
 
