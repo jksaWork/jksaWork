@@ -23,11 +23,14 @@ const WorkSilder = () => {
         {/* Hello Wolr d */}
         {workSlides.slides.map((slide: SlideType, index) => {
           return (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index + Math.random().toString()}>
               <div className="grid grid-cols-2 grid-rows-2 gap-3">
-                {slide.images.map((el: WorkImage) => {
+                {slide.images.map((el: WorkImage, index) => {
                   return (
-                    <div className="cursor-pointer z-10 group rounded-lg relative">
+                    <div
+                      key={index}
+                      className="cursor-pointer z-10 group rounded-lg relative"
+                    >
                       <Link
                         target="_blank"
                         href={el.url ? el.url : "http://localhost:213"}
