@@ -3,7 +3,7 @@ import { initialFormType } from "@/comon.types";
 import React, { FormEvent, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { toast } from "react-toastify";
-function ContactForm() {
+export default function ContactFormComponent() {
   const initialForm: initialFormType = {
     name: "",
     email: "",
@@ -99,5 +99,3 @@ function ContactForm() {
     </div>
   );
 }
-
-export default ContactForm;

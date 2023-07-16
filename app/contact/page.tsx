@@ -9,7 +9,7 @@ import { Avatar, Circles } from "@/components";
 import { aboutData } from "@/constant";
 import { aboutDataType } from "@/comon.types";
 import { useState } from "react";
-import ContactForm from "./ContactForm";
+import ContactFormComponent from "./ContactFormComponent";
 import { fadeIn } from "@/constant/variants";
 const About = () => {
   const [index, setIndex] = useState<number>(1);
@@ -20,7 +20,7 @@ const About = () => {
         <motion.div key="About Page">
           <Transition />
         </motion.div>
-        <ContactForm />
+        <ContactFormComponent />
         <Circles />
       </AnimatePresence>
     </div>
