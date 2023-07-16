@@ -24,7 +24,7 @@ function AboutComponents() {
             }
           >
             An <span className="text-accent">experienced</span> programmer makes
-            <br />
+            <br className="hidden md:block" />
             the job <span className="text-accent">easy</span>
           </motion.h3>
           <motion.p
@@ -127,6 +127,7 @@ function AboutComponents() {
                 after:absolute
                 after:-bottom-1
                 after:left-0
+                
                 capitalize cursor-pointer after:w-8 after:h-[2px] after:bg-white 
                 `}
               >

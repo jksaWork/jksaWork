@@ -9,7 +9,7 @@ import { Avatar, Circles } from "@/components";
 import { aboutData } from "@/constant";
 import { aboutDataType } from "@/comon.types";
 import { useState } from "react";
-import ContactForm from "./contactForm";
+import ContactForm from "./ContactForm";
 import { fadeIn } from "@/constant/variants";
 const About = () => {
   const [index, setIndex] = useState<number>(1);
