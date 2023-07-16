@@ -6,18 +6,22 @@ import { IconType } from "react-icons";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
+import { pacifico } from "../layout";
 function AboutComponents() {
   const [index, setIndex] = useState<number>(0);
   return (
     <div className="container mx-auto h-full px-5 flex items-center justify-center">
-      <div className=" md:grid md:grid-cols-2 items-center gap-y-8  justify-center md:justify-start md:flex-row ">
+      <div className=" md:grid md:grid-cols-2 w-full  items-center gap-y-8  justify-center md:justify-start md:flex-row ">
         <div className="md:flex-1">
           <motion.h3
             variants={fadeIn("down", 0.2)}
             animate="show"
             exit="hidden"
             initial="hidden"
-            className="md:text-3xl text-2xl text-center md:text-start capitalize "
+            className={
+              pacifico.className +
+              " md:text-3xl text-2xl text-center md:text-start capitalize "
+            }
           >
             An <span className="text-accent">experienced</span> programmer makes
             <br />

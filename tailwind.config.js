@@ -21,6 +21,9 @@ module.exports = {
       xl: "1200px",
     },
     extend: {
+      fontFamily: {
+        pacifico: ["var(--font-pacifico)"],
+      },
       colors: {
         primary: "#131424",
         secondary: "#393A47",

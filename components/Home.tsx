@@ -20,7 +20,7 @@ function Home() {
             animate="show"
             exit="hidden"
             initial="hidden"
-            className="md:text-5xl  text-3xl capitalize"
+            className="md:text-5xl __className_28ff18 font-pacifico  text-3xl capitalize"
           >
             transforming ideas <br />
             into <span className="text-accent">Digital realtie</span>

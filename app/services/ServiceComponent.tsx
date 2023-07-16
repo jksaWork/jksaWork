@@ -4,6 +4,8 @@ import { ServiceSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
 import { ServiceIntor } from "@/constant";
+import { pacifico } from "@/app/layout";
+
 function ServiceComponent() {
   return (
     <div className="container mx-auto pt-10 h-full w-full flex items-center justify-center">
@@ -15,7 +17,7 @@ function ServiceComponent() {
           initial="hidden"
           className="md:w-[30vw] flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
         >
-          <h2 className="text-4xl capitalize md:mt-3">
+          <h2 className={pacifico.className + " text-4xl capitalize md:mt-3"}>
             my <span className="text-accent"> services .</span>{" "}
           </h2>
           <p className="max-w-md mx-auto mt-3">{ServiceIntor}</p>

@@ -3,6 +3,7 @@ import React from "react";
 import { TestimonialSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
+import { pacifico } from "../layout";
 
 function TestimonialComponent() {
   return (
@@ -15,8 +16,12 @@ function TestimonialComponent() {
           initial="hidden"
           className="flex font-[500] flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
         >
-          <h2 className="text-4xl capitalize md:mt-3 text-center">
-            what <span className="text-accent">client say ?</span>
+          <h2
+            className={
+              pacifico.className + " text-4xl capitalize md:mt-3 text-center"
+            }
+          >
+            what <span className="text-accent">pepole say ?</span>
           </h2>
         </motion.div>
         <motion.div

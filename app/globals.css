@@ -19,6 +19,10 @@
 }
 
 @layer base {
+  .custom_heading {
+    font-family: var(--font-pacifico);
+    /* @apply ; */
+  }
   body {
     @apply bg-secondary overflow-hidden leading-relaxed;
   }

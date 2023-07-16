@@ -5,6 +5,7 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { Clients } from "@/constant";
 import { RxQuote } from "react-icons/rx";
 import Image from "next/image";
+import { pacifico } from "@/app/layout";
 
 const TestimonialSlider = () => {
   return (
@@ -31,7 +32,9 @@ const TestimonialSlider = () => {
                       className="md:h-[100px] md:w-[100px] w-[50px] h-[50px] rounded-[50%]"
                     />
                   </div>
-                  <div className="text-2xl">{item.person}</div>
+                  <div className={pacifico.className + " text-2xl"}>
+                    {item.person}
+                  </div>
                   <div>{item.postion}</div>
                 </div>
                 <div

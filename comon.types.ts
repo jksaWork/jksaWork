@@ -29,3 +29,23 @@ export type ClientsSayType = {
   postion: string;
   content: string;
 };
+
+export type initialFormType = {
+  name: string;
+  email: string;
+  subject: string;
+  content: string;
+};
+
+export type EmailPayload = {
+  to: string;
+  subject: string;
+  html: string;
+};
+
+export type EmailMessageType = {
+  name: string;
+  email: string;
+  subject: string;
+  content: string;
+};

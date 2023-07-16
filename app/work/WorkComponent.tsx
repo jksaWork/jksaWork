@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
 import WorkSilder from "@/components/WorkSlider";
 import { WorkIntro } from "@/constant";
+import { pacifico } from "../layout";
 // WorkSilder
 function WorkComponent() {
   return (
@@ -15,9 +16,11 @@ function WorkComponent() {
           animate="show"
           exit="hidden"
           initial="hidden"
-          className="md:w-[30vw] flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
+          className={
+            " md:w-[30vw]   flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
+          }
         >
-          <h2 className="text-4xl capitalize md:mt-3">
+          <h2 className={pacifico.className + " text-4xl capitalize md:mt-3"}>
             my <span className="text-accent">Work .</span>{" "}
           </h2>
           <p className="max-w-md mx-auto mt-3 capitalize">{WorkIntro}</p>

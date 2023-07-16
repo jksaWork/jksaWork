@@ -258,23 +258,23 @@ const testimonialData = [
 ];
 export const Clients: ClientsSayType[] = [
   {
-    person: "Mohammmed Mudather",
+    person: "Wefage-Press",
     image: "/thumb1.jpg",
-    postion: "Devopler",
+    postion: "Client",
     content:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
   },
   {
-    person: "Monther Saif",
+    person: "Future Company",
     image: "/thumb1.jpg",
-    postion: "Devopler",
+    postion: "LTD Company",
     content:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
   },
   {
-    person: "AbuBaker Hilal",
+    person: "MSC",
     image: "/thumb1.jpg",
-    postion: "Devopler",
+    postion: "Tech -Componay",
     content:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit nesciunt minima accusantium aperiam. Rerum repudiandae aperiam quo, quia at voluptatum incidunt officia dicta maiores, id sunt distinctio, voluptatibus hic?",
   },
