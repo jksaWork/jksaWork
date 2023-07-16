@@ -1,6 +1,6 @@
 ## Hi there 👋
 
- - My name is <strong>  mohammed Altigani osamn  <strong>I Am a Proficient Web Developer With more Than 3+ Years of Experience. I Have Expertise in Bulid Modren Web Design , 
+ - My name is <strong>  mohammed Altigani osamn  </strong>I Am a Proficient Web Developer With more Than 3+ Years of Experience. I Have Expertise in Bulid Modren Web Design , 
 I am an expert in creating web-based systems, programming , interfaces for applications and developing Responsive web pages
  (Design)
 
