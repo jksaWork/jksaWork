@@ -5,7 +5,8 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { Clients } from "@/constant";
 import { RxQuote } from "react-icons/rx";
 import Image from "next/image";
-import { pacifico } from "@/app/layout";
+// import { pacifico } from "@/app/layout";
+import { pacifico } from "@/lib/fonts";
 
 const TestimonialSlider = () => {
   return (

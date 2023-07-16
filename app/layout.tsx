@@ -15,14 +15,6 @@ const sora = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
-export const pacifico = Pacifico({
-  subsets: ["latin"],
-  variable: "--font-pacifico",
-  // varible: "--font-sora",
-  weight: "400",
-  // weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
-
 export const metadata: Metadata = {
   title: "Mohammed Altigani Osman",
   description: "Software Engnering",

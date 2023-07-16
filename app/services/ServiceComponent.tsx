@@ -4,7 +4,8 @@ import { ServiceSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
 import { ServiceIntor } from "@/constant";
-import { pacifico } from "@/app/layout";
+// import { pacifico } from "../layout";
+import { pacifico } from "@/lib/fonts";
 
 function ServiceComponent() {
   return (

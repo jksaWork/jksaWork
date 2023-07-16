@@ -1,6 +1,7 @@
 import Socials from "./Socials";
 import Link from "next/link";
-import { pacifico } from "@/app/layout";
+import { pacifico } from "@/lib/fonts";
+
 const Header = () => {
   return (
     <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">

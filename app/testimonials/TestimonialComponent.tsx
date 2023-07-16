@@ -3,7 +3,7 @@ import React from "react";
 import { TestimonialSlider } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
-import { pacifico } from "../layout";
+import { pacifico } from "@/lib/fonts";
 
 function TestimonialComponent() {
   return (

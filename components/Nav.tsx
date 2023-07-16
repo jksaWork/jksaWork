@@ -4,7 +4,7 @@ import { links } from "@/constant/index";
 import Link from "next/link";
 import { NavLink } from "@/comon.types";
 import { usePathname } from "next/navigation";
-import { pacifico } from "@/app/layout";
+import { pacifico } from "@/lib/fonts";
 
 const Nav = () => {
   const path = usePathname();

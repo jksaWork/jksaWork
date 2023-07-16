@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
 import WorkSilder from "@/components/WorkSlider";
 import { WorkIntro } from "@/constant";
-import { pacifico } from "../layout";
+import { pacifico } from "@/lib/fonts";
 // WorkSilder
 function WorkComponent() {
   return (

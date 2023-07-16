@@ -6,7 +6,8 @@ import { IconType } from "react-icons";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/variants";
-import { pacifico } from "../layout";
+import { pacifico } from "@/lib/fonts";
+
 function AboutComponents() {
   const [index, setIndex] = useState<number>(0);
   return (
