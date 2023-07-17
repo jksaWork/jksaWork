@@ -3,6 +3,7 @@ import { initialFormType } from "@/comon.types";
 import React, { FormEvent, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { toast } from "react-toastify";
+import { pacifico } from "@/lib/fonts";
 export default function ContactFormComponent() {
   const initialForm: initialFormType = {
     name: "",
@@ -23,7 +24,7 @@ export default function ContactFormComponent() {
           })
             .then((res) => {
               //    console.log();
-              if (res.status == 201) {
+              if (res.status == 200) {
                 reslove("as");
               }
             })
@@ -35,9 +36,9 @@ export default function ContactFormComponent() {
       ),
 
       {
-        pending: "Insert Prompt To System",
-        success: "Insert Prompt Done 👌",
-        error: "Insert Prompt Faild 🤯",
+        pending: "Mail Sending ...",
+        success: "Mail was Sent Prompt Done 👌",
+        error: "Mail Sent Faild Try Again 🤯",
       }
     );
   };
@@ -50,8 +51,8 @@ export default function ContactFormComponent() {
   return (
     <div className="container mx-auto pt-10 h-full w-full flex items-center justify-center">
       <form onSubmit={handleSubmit} className="w-[800px]">
-        <h2 className="text-5xl capitalize text-center">
-          let <span className="text-accent">contact .</span>
+        <h2 className={"text-5xl capitalize text-center " + pacifico.className}>
+          lets <span className="text-accent">contact .</span>
         </h2>
         <div className="flex flex-col gap-y-3 w-full mt-10">
           <div className="flex gap-x-3 w-full">
