@@ -60,7 +60,7 @@ const WorkSilder = () => {
                           </span>
                         </div>
                       </Link>
-                      <div className="image_container h-[180px] overflow-hidden w-full">
+                      <div className="image_container md:h-[180px] h-[100px] overflow-hidden w-full">
                         <Image
                           src={el.path}
                           alt="Project Image"

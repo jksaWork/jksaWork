@@ -226,18 +226,16 @@ export const workSlides: workSlidesTypes = {
           title: "title",
           path: "/thumb1.jpg",
           url: "https://next-js-ai-powered-prompts.vercel.app",
-        
         },
         {
           title: "title",
           path: "/thumb2.jpg",
           url: "https://next-js-ai-powered-prompts.vercel.app",
-       
         },
         {
           title: "title",
           path: "/thumb3.jpg",
-       
+
           url: "https://next-js-ai-powered-prompts.vercel.app",
         },
       ],

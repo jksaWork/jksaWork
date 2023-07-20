@@ -17,7 +17,7 @@ function WorkComponent() {
           exit="hidden"
           initial="hidden"
           className={
-            " md:w-[30vw]   flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
+            " md:w-[30vw]  max-sm:line-clamp-3 flex flex-col mb-5 md:mb-0 text-center md:text-left md:justify-start"
           }
         >
           <h2 className={pacifico.className + " text-4xl capitalize md:mt-3"}>
