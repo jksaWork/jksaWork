@@ -194,23 +194,23 @@ export const workSlides: workSlidesTypes = {
       images: [
         {
           title: "Front End Mentor",
-          path: "/huddel.png",
+          path: "/projects/huddel.png",
           url: "https://jksa-frontendmintor.netlify.app/",
         },
         {
           title: "Tkween Clone",
-          path: "/tkween.png",
+          path: "/projects/tkween.png",
           url: "https://tkween-clone.netlify.app",
         },
 
         {
           title: "9th Company",
-          path: "/solution.png",
+          path: "/projects/solution.png",
           url: "http://solution.pharmaly.themsc.net",
         },
         {
           title: "Hock Bank",
-          path: "/modren.png",
+          path: "/projects/modren.png",
           url: "https://jksa-moden-ui.onrender.com",
         },
       ],
@@ -219,7 +219,7 @@ export const workSlides: workSlidesTypes = {
       images: [
         {
           title: "Ai - Prompts",
-          path: "/prompts.png",
+          path: "/projects/prompts.png",
           url: "https://next-js-ai-powered-prompts.vercel.app",
         },
         {
