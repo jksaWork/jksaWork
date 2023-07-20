@@ -193,40 +193,52 @@ export const workSlides: workSlidesTypes = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "Front End Mentor",
+          path: "/huddel.png",
+          url: "https://jksa-frontendmintor.netlify.app/",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Tkween Clone",
+          path: "/tkween.png",
+          url: "https://tkween-clone.netlify.app",
+        },
+
+        {
+          title: "9th Company",
+          path: "/solution.png",
+          url: "http://solution.pharmaly.themsc.net",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
-        },
-        {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Hock Bank",
+          path: "/modren.png",
+          url: "https://jksa-moden-ui.onrender.com",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Ai - Prompts",
+          path: "/prompts.png",
+          url: "https://next-js-ai-powered-prompts.vercel.app",
         },
         {
           title: "title",
           path: "/thumb1.jpg",
+          url: "https://next-js-ai-powered-prompts.vercel.app",
+        
         },
         {
           title: "title",
           path: "/thumb2.jpg",
+          url: "https://next-js-ai-powered-prompts.vercel.app",
+       
         },
         {
           title: "title",
           path: "/thumb3.jpg",
+       
+          url: "https://next-js-ai-powered-prompts.vercel.app",
         },
       ],
     },

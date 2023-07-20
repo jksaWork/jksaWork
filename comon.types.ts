@@ -14,7 +14,7 @@ export type aboutDataType = {
 export type WorkImage = {
   title: string;
   path: string;
-  url?: string;
+  url: string;
 };
 export type SlideType = {
   images: WorkImage[];

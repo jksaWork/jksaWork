@@ -17,8 +17,9 @@ const WorkSilder = () => {
         slidesPerView={1}
         freeMode={true}
         pagination={{ clickable: true }}
+        navigation={true}
         modules={[FreeMode, Pagination, Navigation]}
-        className="h-[240px] sm:h-[340px]"
+        className="h-[260px] sm:h-[400px]"
       >
         {/* Hello Wolr d */}
         {workSlides.slides.map((slide: SlideType, index) => {
@@ -31,9 +32,12 @@ const WorkSilder = () => {
                       key={index}
                       className="cursor-pointer z-10 group rounded-lg relative"
                     >
-                      <Link target="_blank" href={el.path}>
+                      <Link target="_blank" href={el.url ?? el.path}>
                         <div
-                          className="absolute opacity-0 group-hover:opacity-80 w-full h-full
+                          className="
+                          absolute 
+                          opacity-0
+                           group-hover:opacity-80 w-full h-full
                         gap-1 justify-center items-center
                         bg-gradient-to-l
                         flex 
@@ -56,14 +60,15 @@ const WorkSilder = () => {
                           </span>
                         </div>
                       </Link>
-
-                      <Image
-                        src={el.path}
-                        alt="Project Image"
-                        height={200}
-                        width={200}
-                        className="w-full conver rounded-md"
-                      />
+                      <div className="image_container h-[180px] overflow-hidden w-full">
+                        <Image
+                          src={el.path}
+                          alt="Project Image"
+                          height={200}
+                          width={200}
+                          className="w-full conver h-full  rounded-md"
+                        />
+                      </div>
                     </div>
                   );
                 })}
